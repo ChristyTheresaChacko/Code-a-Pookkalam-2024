@@ -1,1 +1,17 @@
-Monschool Platform was used to code the entire pookkalam.Show() was used to display the designs in the order that they were made, from outermost to innermost.First, the outermost layers are formed, followed by the innermost layers.Circle() was used to make the outermost circle, and ellipse was used to create the flowers that are visible next to it.Circle functions are used in the creation of the following design.The polygon function was used to construct the triangle-shaped designs.The innermost patterns are circles comprised of circle() and an ellipse()-created flower.
+The design was entirely coded on a platform known as Monschool. The design mainly consists of various structures created by using circles, ellipses, and triangles. These basic shapes were used to create flowers and rings of the design. For implementing this, the functions Circle(), Ellipse(), and Polygon() were used.Starting from the outermost ring, the design was created inwards, creating multiple layers combining shapes to create complex structures and colouring and positioning them appropriately.
+ 
+ 
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
