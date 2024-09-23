@@ -1,0 +1,65 @@
+#The whole code is written in joy,compiled and was submitted in monschool tinkerhub.
+
+#outer circles
+cc2=circle(r=113,fill="green",stroke="none")
+cc1=circle(r=99,fill="#1d6630")
+show(cc2,cc1);
+#small ellipse flowers
+g=ellipse(x=-10,y=0,h=10,w=20,fill='#962069',stroke='white')|repeat(15,rotate(30))|scale(0.3)|translate(x=-80)
+f1=ellipse(x=-10,y=0,h=10,w=20,fill='#f0a543',stroke='red')|repeat(15,rotate(30))|scale(0.3)|translate(x=-78,y=-10)
+ff=combine([g,f1])|repeat(28,rotate(14))|translate(x=0,y=0)|scale(1.3206)
+g1=ellipse(x=-10,y=0,h=10,w=20,fill='#750914',stroke='white')|repeat(15,rotate(30))|scale(0.3)|translate(x=-80)
+f11=ellipse(x=-10,y=0,h=10,w=20,fill='#ebdc13',stroke='red')|repeat(15,rotate(30))|scale(0.3)|translate(x=-78,y=-10)
+ff2=combine([g1,f11])|repeat(28,rotate(14))|translate(x=0,y=0)|scale(.61)
+show(ff)
+#orange ellipse flower design
+s=ellipse(x=-30,h=20,w=50,fill='#fadd02',stroke='#fa9b02',stroke_width=5)|repeat(15,rotate(30))
+s1=s|scale(0.19)|translate(x=-50)|repeat(14,rotate(30))
+s2=ellipse(x=-50,h=20,w=50,fill='orange',stroke='red',stroke_width=5)|repeat(15,rotate(28))
+s3=s2|scale(0.06)|translate(x=-50)|repeat(18,rotate(30))
+cf=combine([s1,s3])|scale(1.6)|translate(x=0,y=0)
+show(cf)
+#innermost flower designs
+e = ellipse(w=20,h=5,stroke="red",fill="yellow",stroke_width=0.4)  | repeat(19,rotate(30))
+e33 = ellipse(w=20,h=5,stroke="red",fill="red",stroke_width=0.4)  | repeat(19,rotate(30)) |scale(.56)
+c1=circle(r=3,fill="red",stroke="green")
+c3=circle(r=1,fill="white",stroke="green")
+s = rectangle(w=24,h=8,stroke="green",) | repeat(20,rotate(35))
+c4=circle(r=16,fill="orange",stroke="red")
+c5=circle(r=17,fill="red",stroke="white")
+#triangle shaped polygon designs
+t1 = point(x=0,y=0)
+t2 = point(x=10,y=30)
+t3 = point(x=0,y=52)
+t4 = point(x=-11,y=30)
+p1 = polygon([t1,t2,t3],w=10,h=2,fill='#12a60a',stroke='none')|repeat(9,rotate(40)) | scale(.6)
+p2 = polygon([t1,t4,t3],fill='yellow',stroke='none')|repeat(9,rotate(40)) | scale(.6)
+p3 = polygon([t1,t2,t3],w=10,h=2,fill='#e8a0af',stroke='none')|repeat(22,rotate(20)) | scale(.56)
+p4 = polygon([t1,t4,t3],fill='#f09f4f',stroke='none')|repeat(22,rotate(20)) | scale(.56)
+c6=circle(r=30,fill="#ba3d7a",stroke="green")
+#circle shaped flower designs
+c7=circle(r=12,x=17,y=25,fill="yellow",stroke="#f5f233") | repeat(7,rotate(360/7))
+c8=circle(r=10.5,x=17,y=25,fill="orange",stroke="white") | repeat(7,rotate(360/7))
+c9=circle(r=7,x=17,y=25,fill="#f7313b",stroke="green",stroke_width=0.4) | repeat(7,rotate(360/7))
+c10=circle(r=4,x=17,y=25,fill="#d94373",stroke="white") | repeat(7,rotate(360/7))
+c11=circle(r=12,x=31,y=18,fill="#e80cce",stroke="green") | repeat(7,rotate(360/7))| scale (0.88)
+c12=circle(r=9,x=31,y=18,fill="orange",stroke="white") | repeat(7,rotate(360/7))| scale (0.88)
+c13=circle(r=7,x=31,y=18,fill="#f7313b",stroke="white") | repeat(7,rotate(360/7))| scale (0.88)
+c14=circle(r=4,x=31,y=18,fill="#c41025",stroke="green") | repeat(7,rotate(360/7)) | scale (0.88)
+#triangle shaped polygon
+t5 = point(x=0,y=0)
+t6 = point(x=60,y=55)
+t7 = point(x=0,y=62)
+t8 = point(x=-11,y=50)
+p5 = polygon([t1,t2,t3],fill='red',stroke='none')|repeat(44,rotate(50)) | scale(1.102)
+p6 = polygon([t1,t4,t3],fill='yellow',stroke='none')|repeat(44,rotate(50)) | scale(1.102)
+#ellipse shaped stroke design and its background
+e1 = ellipse(stroke = "pink",stroke_width=0.9)  | repeat(50,rotate(10)) | scale(0.8)
+ct1=circle(r=79,fill="red",stroke="green")
+ct2=circle(r=71,fill="orange",stroke="none")
+ct3=circle(r=64,fill="yellow",stroke="none")
+ct4=circle(r=57,fill="#ede613",stroke="none")
+ct5=circle(r=57,fill="#f5f17a",stroke="none")
+e3 = ellipse(x=81,y=81,w=20,h=5,stroke="red",fill="yellow")  | repeat(19,rotate(30))
+
+show(ct1,ct2,ct3,ct4,ct5,e1,ff2,c11,c12,c13,c14,c7,c8,c9,c10,c6,p3,p4,p1,p2,c5,c4,s,e,e33,c1,c3) 
